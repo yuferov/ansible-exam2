@@ -1,0 +1,10 @@
+---
+- hosts: deploy_servers
+  become: yes
+  vars_files:
+    - /home/user/.ansible/creds.yml
+  roles:
+    - yuferov.ansible_docker_role
+    - yuferov.ansible_webapp_role
+    - ansible-nginx-role
+...

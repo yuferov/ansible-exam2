@@ -1,0 +1,10 @@
+---
+collections:
+  - name: community.docker
+
+roles:
+  - name: yuferov.ansible_docker_role
+  - name: yuferov.ansible_webapp_role
+  - name: ansible-nginx-role
+    src: https://github.com/yuferov/ansible-nginx-role.git
+    version: origin/master
